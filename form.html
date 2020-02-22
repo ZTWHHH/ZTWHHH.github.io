@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+       <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+        </li>
+      </div>
+    </nav>
+    <br>
+
+    <h1>Add New Interest</h1>
+    <br>
+    
+    <form>
+      <div class="form-group">
+        <label for="Name_1">Interest Name</label>
+        <input type="text" class="form-control" id="Name_1" placeholder="Name">
+      </div>
+
+      <br>
+
+      <div class="form-group">
+        <label for="Textarea">Text About Interest</label>
+        <textarea class="form-control" id="Textarea" rows="4"></textarea>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="form-group">
+            <label for="File">Upload Local Image:</label>
+            <input type="file" class="form-control-file" id="File">
+          </div>
+        </div>
+
+        <div class="col-sm-5">
+          <div class="form-group">
+            <label for="Select">Select # Tweets to Display:</label>
+            <select class="form-control" id="Select">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <p>On a scale of 1-5, how interested in this for you?</p>
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">1</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">2</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+        <label class="form-check-label" for="inlineCheckbox3">3</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+        <label class="form-check-label" for="inlineCheckbox4">4</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+        <label class="form-check-label" for="inlineCheckbox5">5</label>
+      </div>
+      <br><br>
+
+      <p>Login to Finish Submitting</p>
+
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="form-group">
+            <input type="text" class="form-control" id="Name_2" placeholder="Username">
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="form-group">
+            <input type="password" class="form-control" id="Password" placeholder="Password">
+          </div>
+        </div>
+      </div>
+      <br><br>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </body>
+</html>
